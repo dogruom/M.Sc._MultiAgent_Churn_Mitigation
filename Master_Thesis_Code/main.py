@@ -56,8 +56,8 @@ def _build_provider_pool():
     Priority order: Groq (primary) -> Gemini -> xAI -> OpenRouter -> Cerebras.
     This multi-provider design is a deliberate POC for production scalability."""
     pool = []
-    # Groq keys first — primary provider (GROQ_API_KEY, GROQ_API_KEY_2, ...)
-    for suffix in ["", "_2", "_3"]:
+    # Groq keys first — primary provider (GROQ_API_KEY, GROQ_API_KEY_2, ..., GROQ_API_KEY_7)
+    for suffix in ["", "_2", "_3", "_4", "_5", "_6", "_7"]:
         key = os.getenv(f"GROQ_API_KEY{suffix}")
         if key and not key.startswith("xai-"):  # Filter out mislabeled xAI keys
             pool.append({
@@ -86,7 +86,7 @@ def _build_provider_pool():
             "requests_used": 0, "tokens_used": 0, "exhausted": False
         })
     # Also check for xAI keys mislabeled as GROQ
-    for suffix in ["", "_2", "_3"]:
+    for suffix in ["", "_2", "_3", "_4", "_5", "_6", "_7"]:
         key = os.getenv(f"GROQ_API_KEY{suffix}")
         if key and key.startswith("xai-"):
             pool.append({
@@ -97,7 +97,7 @@ def _build_provider_pool():
             })
     # OpenRouter keys (OPEN_ROUTER_API_KEY, _2, _3, ... or OPENROUTER_API_KEY)
     or_keys_seen = set()
-    for suffix in ["", "_2", "_3"]:
+    for suffix in ["", "_2", "_3", "_4", "_5"]:
         key = os.getenv(f"OPEN_ROUTER_API_KEY{suffix}") or os.getenv(f"OPENROUTER_API_KEY{suffix}")
         if key and key not in or_keys_seen:
             or_keys_seen.add(key)
