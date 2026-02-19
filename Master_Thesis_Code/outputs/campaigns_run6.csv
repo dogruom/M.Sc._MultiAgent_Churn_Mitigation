@@ -1,0 +1,9 @@
+Cluster,Persona,OfferType,Discount%,Duration,EstimatedROI%
+0,HighRisk,Premium,30,12,120
+0,HighRisk,Standard,20,6,90
+1,ModerateRisk,Premium,15,12,100
+1,ModerateRisk,Standard,10,6,80
+2,HighRisk,Premium,40,12,150
+2,HighRisk,Standard,30,6,120
+3,Loyal,Premium,0,24,50
+3,Loyal,Standard,0,12,30

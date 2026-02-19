@@ -1,0 +1,7 @@
+Feature,Value
+Row Count,7043
+Column Count,21
+Target Variable,Churn (Yes/No)
+Churn Rate,26.5 percentage
+Numeric Variables,3
+Categorical Variables,18

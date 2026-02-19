@@ -1,0 +1,4 @@
+Metric,KMeans,GMM
+silhouette,0.4735,0.4114
+davies-bouldin,0.7038,0.7643
+calinski-harabasz,7698.5764,5905.0535

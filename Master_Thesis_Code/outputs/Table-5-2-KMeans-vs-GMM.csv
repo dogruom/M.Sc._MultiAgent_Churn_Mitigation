@@ -1,0 +1,4 @@
+Metric,KMeans,GMM,Winner
+silhouette,0.4735,0.4114,K-Means
+davies-bouldin,0.7038,0.7643,K-Means
+calinski-harabasz,7698.5764,5905.0535,K-Means

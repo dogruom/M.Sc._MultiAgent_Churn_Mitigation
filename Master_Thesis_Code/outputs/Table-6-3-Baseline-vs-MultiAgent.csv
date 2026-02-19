@@ -1,0 +1,4 @@
+Metric,Single-Agent,Multi-Agent,Difference
+Execution Time (s),1.35,11.88,+10.5s
+Estimated Tokens,1136.0,10242.0,+9106
+ADS,9.38,9.32,-0.06

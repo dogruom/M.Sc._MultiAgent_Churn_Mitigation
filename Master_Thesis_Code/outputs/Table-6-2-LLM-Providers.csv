@@ -1,0 +1,4 @@
+Provider,Model,RPM,RPD
+groq,groq/llama-3.3-70b-versatile,30,14400
+groq_2,groq/llama-3.3-70b-versatile,30,14400
+groq_3,groq/llama-3.3-70b-versatile,30,14400

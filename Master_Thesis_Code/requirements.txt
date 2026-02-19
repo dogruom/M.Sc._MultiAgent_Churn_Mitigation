@@ -1,0 +1,13 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+crewai
+python-dotenv
+litellm
+psutil
+setuptools
+networkx
+scipy
+requests

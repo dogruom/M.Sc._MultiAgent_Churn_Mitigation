@@ -1,0 +1,12 @@
+Metric,Mean,Min,Max,Std
+loop-count,1.6,1.0,3.0,0.7
+baseline-ads,5.0,0.0,9.38,4.71
+baseline-time,2.1,1.23,3.0,0.78
+baseline-net-time,1.6,1.23,2.0,0.28
+baseline-retry-time,0.5,0.0,1.0,0.53
+baseline-tokens,96.6,57.0,136.0,35.96
+ma-ads,9.93,9.32,10.0,0.22
+ma-time,9.14,3.35,16.53,4.55
+ma-net-time,8.14,3.35,15.53,4.22
+ma-retry-time,1.0,0.0,2.0,0.94
+ma-tokens,2231.6,679.0,10242.0,2876.13
